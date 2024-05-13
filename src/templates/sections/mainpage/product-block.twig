@@ -1,0 +1,41 @@
+<section class="l-main__products-container">
+	<div class="products-container__item">
+		<div class="item__title">
+			<h2 class="title__main">Акции</h2>
+			<div class="title__secondary">
+				<h3>Все акции</h3>
+				<div class="secondary__img">{{ inc.inlineSvg('arrow', '../static/img/arrow.svg') }}</div>
+			</div>
+		</div>
+		<div class="item__product-container">
+			{% include "sections/product.twig" %}
+		</div>
+	</div>
+
+    <div class="products-container__item">
+		<div class="item__title">
+			<h2 class="title__main">Новинки</h2>
+			<div class="title__secondary">
+				<h3>Все новинки</h3>
+				<div class="secondary__img">{{ inc.inlineSvg('arrow', '../static/img/arrow.svg') }}</div>
+			</div>
+		</div>
+		<div class="item__product-container">
+			{% include "sections/product.twig" %}
+		</div>
+	</div>
+
+    <div class="products-container__item">
+		<div class="item__title">
+			<h2 class="title__main">Покупали раньше</h2>
+			<div class="title__secondary">
+				<h3>Все покупки</h3>
+				<div class="secondary__img">{{ inc.inlineSvg('arrow', '../static/img/arrow.svg') }}</div>
+			</div>
+		</div>
+		<div class="item__product-container">
+			{% include "sections/product.twig" %}
+		</div>
+	</div>
+
+</section>

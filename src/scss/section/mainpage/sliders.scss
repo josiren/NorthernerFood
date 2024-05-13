@@ -1,0 +1,16 @@
+.l_main__sliders {
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+  background-image: url("../img/mainpage/sliders/background.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  justify-content: center;
+  background-position: center center;
+
+  .sliders__text {
+    font-size: 48px;
+    font-weight: bold;
+    color: $text-base;
+  }
+}

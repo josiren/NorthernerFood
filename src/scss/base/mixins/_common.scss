@@ -3,13 +3,11 @@
     &::after {
       content: '';
       display: block;
-      padding-top: percentage(divide($height, $width));
     }
   }
 
   @else {
     display: block;
-    padding-top: percentage(divide($height, $width));
   }
 }
 
