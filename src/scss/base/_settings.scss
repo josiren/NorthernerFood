@@ -8,12 +8,15 @@ $inner-pd-mob: 15px;
 // Colors
 $black-true: #000;
 $white-true: #fff;
+$grayscale-hard: rgba(51, 51, 51, 1);
 
 // UI Colors
 $color-base: $white-true;
 $accent-base: #1a8cff;
 $action-base: #f42f3e;
 $text-base: #3b4256;
+$text-secondary: #fff;
+$text-placeholder: $grayscale-hard;
 $border-base: #e6ecf2;
 $link-base: #1964b1;
 $shadow-base: #004484;
@@ -22,16 +25,15 @@ $site-preloader-bg: $white-true;
 
 // Backgrounds
 $bg-main: $white-true;
-$bg-alt: #f0f0f0;
+$bg-alt: #fbf8ec;
 $bg-footer: #ccc;
+$bg-buttons-secondary: #70c05b;
 
 // Fonts
-$font-base: 'Arial';
-$font-alt: 'Meta';
+$font-base: 'Rubik';
 $font-size: 16px;
 $line-height: 1.33;
-$font-family-base: $font-base, arial, helvetica, sans-serif;
-$font-family-alt: $font-alt, arial, helvetica, sans-serif;
+$font-family-base: $font-base, rubik, sans-serif;
 
 // Transition
 $g-transition-duration: 0.25s;

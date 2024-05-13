@@ -11,3 +11,6 @@
 // 700  Bold
 // 800  Extra Bold (Ultra Bold)
 // 900  Black (Heavy)
+
+@include font-face('Rubik', '../fonts/Rubik/Rubik-Regular', 400);
+@include font-face('Rubik', '../fonts/Rubik/Rubik-Bold', bold);

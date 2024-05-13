@@ -126,7 +126,6 @@
 }
 
 @mixin fill-abs() {
-  position: absolute;
   top: 0;
   left: 0;
   display: block;
@@ -170,6 +169,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@mixin between_flex() {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 @mixin center-abs($axis: both) {
