@@ -7,7 +7,6 @@ $b: '.site-footer';
   gap: 16px;
   padding: 0 116px;
   height: 126px;
-
   background-image: url("../img/footer/background.png");
   background-repeat: no-repeat;
   background-position: center center;
@@ -52,13 +51,8 @@ $b: '.site-footer';
 
     .footer-top__social-phone {
       display: flex;
-<<<<<<< HEAD
       align-items: center;
       margin-left: 40px;
-=======
-      margin-left: 40px;
-      align-items: center;
->>>>>>> a22b83a (added footer)
 
       .social-phone__img {
         width: 24px;
