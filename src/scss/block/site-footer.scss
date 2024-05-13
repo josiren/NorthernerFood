@@ -1,5 +1,79 @@
 $b: '.site-footer';
 
 #{$b} {
-  //
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  padding: 0 116px;
+  height: 126px;
+
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .footer-top__logo {
+      width: 64px;
+      height: 44px;
+    }
+
+    .footer-top__navigation {
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 8px;
+      column-gap: 40px;
+      margin-left: 40px;
+      font-size: 12px;
+    }
+
+    .footer-top__social {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-left: 133px;
+      column-gap: 16px;
+      row-gap: 10px;
+
+      .social__item {
+        width: 24px;
+        height: 24px;
+
+        .item__phone-text {
+          margin-left: 8px;
+        }
+      }
+    }
+
+    .footer-top__social-phone {
+      display: flex;
+      margin-left: 40px;
+      align-items: center;
+
+      .social-phone__img {
+        width: 24px;
+        height: 24px;
+      }
+
+      .social-phone__text {
+        margin-left: 8px;
+      }
+    }
+  }
+
+  .footer-bottom {
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+
+    .footer-bottom__text {
+      font-size: 12px;
+    }
+
+    .footer-bottom__logo {
+      width: 100px;
+      height: 10px;
+      margin-left: 8px;
+    }
+  }
 }
