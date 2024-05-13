@@ -7,6 +7,10 @@ $b: '.site-footer';
   gap: 16px;
   padding: 0 116px;
   height: 126px;
+  background-image: url("../img/footer/background.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #f9f4e2;
 
   .footer-top {
     display: flex;
@@ -47,8 +51,8 @@ $b: '.site-footer';
 
     .footer-top__social-phone {
       display: flex;
-      margin-left: 40px;
       align-items: center;
+      margin-left: 40px;
 
       .social-phone__img {
         width: 24px;
