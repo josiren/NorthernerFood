@@ -8,7 +8,7 @@ $b: '.site-footer';
   padding: 0 99px;
   height: 126px;
   background-image: url("../img/footer/background.png");
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-position: center center;
   background-color: #f9f4e2;
 
@@ -16,6 +16,10 @@ $b: '.site-footer';
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (width >= 1600px) {
+      justify-content: center;
+    }
 
     .footer-top__logo {
       width: 64px;
@@ -69,6 +73,10 @@ $b: '.site-footer';
     align-self: flex-end;
     display: flex;
     align-items: center;
+
+    @media (width >= 1600px) {
+      margin-right: 14.4%;
+    }
 
     .footer-bottom__text {
       font-size: 12px;
