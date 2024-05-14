@@ -1,5 +1,49 @@
 $b: ".l-main";
 
 #{$b} {
-  //
+  &__stores {
+    display: flex;
+    flex-direction: column;
+    max-width: 1208px;
+    margin: 129px auto 0;
+
+    .stores__points {
+      display: flex;
+      gap: 24px;
+      margin-top: 40px;
+
+      .points__item {
+        padding: 8px;
+        background-color: $bg-buttons-secondary;
+        color: $text-secondary;
+        width: 97px;
+        height: 32px;
+        font-size: 12px;
+        border-radius: 4px;
+
+        &:nth-child(2) {
+          width: 86px;
+        }
+
+        &:nth-child(3) {
+          width: 103px;
+        }
+
+        &:nth-child(4) {
+          width: 80px;
+        }
+      }
+    }
+
+    .stores__map {
+      display: flex;
+    }
+
+    .map__item {
+      display: flex;
+      flex-grow: 1;
+      margin-top: 24px;
+      height: 354px;
+    }
+  }
 }

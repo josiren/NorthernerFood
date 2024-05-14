@@ -20,32 +20,6 @@ $b: ".l-main";
       display: none;
     }
 
-    .item__title {
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
-
-      .title__main {
-        font-size: 36px;
-        font-weight: bold;
-        color: $text-base;
-      }
-
-      .title__secondary {
-        display: flex;
-        align-items: center;
-        gap: 25px;
-        color: $grayscale-medium;
-
-        .secondary__img {
-          width: 13px;
-          height: 7px;
-          rotate: -90deg;
-          margin-left: 10px;
-        }
-      }
-    }
-
     .item__product-container {
       display: flex;
       gap: 40px;

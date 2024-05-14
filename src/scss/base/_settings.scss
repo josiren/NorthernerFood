@@ -9,6 +9,7 @@ $inner-pd-mob: 15px;
 $black-true: #000;
 $white-true: #fff;
 $grayscale-hard: #3333;
+$grayscale-hard-sec: #727272;
 $grayscale-light: #bfbfbf;
 $grayscale-medium: #606060;
 $orange-true: #f63f;
@@ -33,6 +34,7 @@ $bg-footer: #ccc;
 $bg-primary: $orange-true;
 $bg-primary-muted: #fcd5ba;
 $bg-buttons-secondary: #70c05b;
+$bg-buttons-secondary-muted: #e5ffde;
 $bg-secondary-muted: #e5ffde;
 
 // Fonts
@@ -55,6 +57,9 @@ $tablet-width: 768px;
 
 // Rem
 $root-font-size: 100;
+
+// Px
+$h2-primary-size: 36px;
 
 // Paths
 $image-path: '../img/';

@@ -17,6 +17,32 @@ body {
   text-rendering: geometricPrecision;
 }
 
+.primary-h2 {
+  font-size: $h2-primary-size;
+  color: $text-base;
+  font-weight: bold;
+}
+
+.item__title {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.secondary__img {
+  height: 7px;
+  margin-left: 10px;
+  rotate: -90deg;
+  width: 13px;
+}
+
+.title__secondary {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  color: $grayscale-medium;
+}
+
 a {
   transition: $g-transition;
 }
