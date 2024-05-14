@@ -14,12 +14,26 @@ $b: ".l-main";
 
       .points__item {
         padding: 8px;
-        background-color: $bg-buttons-secondary;
-        color: $text-secondary;
+        background-color: $bg-buttons-secondary-muted-alt;
         width: 97px;
         height: 32px;
         font-size: 12px;
         border-radius: 4px;
+        color: $grayscale-medium;
+        transition: $g-transition;
+
+        &:hover {
+          box-shadow: $shadow-secondary-muted;
+        }
+
+        &.selected {
+          background-color: $bg-buttons-secondary;
+          color: $text-secondary;
+
+          &:hover {
+            box-shadow: $shadow-secondary;
+          }
+        }
 
         &:nth-child(2) {
           width: 86px;
@@ -40,10 +54,14 @@ $b: ".l-main";
     }
 
     .map__item {
-      display: flex;
+      display: none;
       flex-grow: 1;
       margin-top: 24px;
       height: 354px;
+
+      &.selected {
+        display: flex;
+      }
     }
   }
 }

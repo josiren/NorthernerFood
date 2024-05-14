@@ -24,6 +24,8 @@ $text-placeholder: $grayscale-hard;
 $border-base: #e6ecf2;
 $link-base: #1964b1;
 $shadow-base: #004484;
+$shadow-secondary-muted: 0 5px 10px rgba(0, 0, 0, 0.1);
+$shadow-secondary: 0 5px 10px rgba(112, 192, 91, 0.2);
 $site-preloader-inner: $accent-base;
 $site-preloader-bg: $white-true;
 
@@ -34,6 +36,7 @@ $bg-footer: #ccc;
 $bg-primary: $orange-true;
 $bg-primary-muted: #fcd5ba;
 $bg-buttons-secondary: #70c05b;
+$bg-buttons-secondary-muted-alt: #f3f2f1;
 $bg-buttons-secondary-muted: #e5ffde;
 $bg-secondary-muted: #e5ffde;
 
