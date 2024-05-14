@@ -10,7 +10,7 @@ $b: '.item__product-container';
 
     .item__img {
       position: relative;
-      
+
       .item__img__like-btn,
       .item__img__discount-info {
         position: absolute;
@@ -19,6 +19,22 @@ $b: '.item__product-container';
       .item__img__like-btn {
         top: 8px;
         right: 8px;
+        width: 32px;
+        height: 32px;
+        background: url("../img/product/loved/no-liked-standart.svg") no-repeat center center;
+        transition: $g-transition;
+
+        &:hover {
+          background: url("../img/product/loved/no-liked-hover.svg") no-repeat center center;
+        }
+
+        &.liked {
+          background: url("../img/product/loved/liked-standart.svg") no-repeat center center;
+
+          &:hover {
+            background: url("../img/product/loved/liked-hover.svg") no-repeat center center;
+          }
+        }
       }
 
       .item__img__discount-info {
@@ -80,6 +96,7 @@ $b: '.item__product-container';
         background-color: $bg-main;
         color: $bg-buttons-secondary;
         transition: $g-transition;
+        align-self: auto;
 
         &:hover {
           background-color: $bg-primary;
