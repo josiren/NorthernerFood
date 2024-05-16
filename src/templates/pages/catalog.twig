@@ -1,6 +1,8 @@
-{% set pageTitle = 'Catalogpage' %}
+{% set pageTitle = 'Каталог' %}
 {% set pageClass = 'p-catalog' %}
 {% extends "layouts/default.twig" %}
 
 {% block content %}
+    {% include "sections/pagecheck.twig" %}
+    {% include "sections/pages/catalogpage/catalog.twig" %}
 {% endblock %}

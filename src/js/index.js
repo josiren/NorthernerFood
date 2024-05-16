@@ -7,6 +7,7 @@ import cssVars from './modules/cssVars';
 import lazyload from './modules/lazyload';
 import product from './modules/product';
 import stores from './modules/pages/mainpage/stores';
+import catalog from './modules/pages/catalogpage/catalog';
 
 documentReady(() => {
   resize.init();
@@ -17,4 +18,5 @@ documentReady(() => {
 documentLoaded(() => {
   product.init();
   stores.init();
+  catalog.init();
 });

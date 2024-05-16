@@ -7,8 +7,11 @@
 // Block
 @import 'block/*.scss';
 
-// Section
-@import 'section/*.scss';
+// Sections
+@import 'sections/*.scss';
 
 //Main page scss
-@import 'section/mainpage/*.scss';
+@import 'sections/pages/mainpage/*.scss';
+
+//Catalog page scss
+@import 'sections/pages/catalogpage/*.scss';

@@ -41,6 +41,11 @@ $b: '.site-header';
         padding: 4px;
         background-color: $bg-buttons-secondary;
         border-radius: 4px;
+        transition: $g-transition;
+
+        &:hover {
+          box-shadow: $shadow-secondary;
+        }
 
         .catalog__text {
           margin-left: 20px;
@@ -51,7 +56,6 @@ $b: '.site-header';
         padding: 8px 6px 8px 13px;
         gap: 10px;
         border: 1px solid $bg-buttons-secondary;
-        color: $text-placeholder;
 
         .buttons-item__input {
           flex-grow: 1;
@@ -63,7 +67,7 @@ $b: '.site-header';
         }
       }
 
-      .calalog__container {
+      .catalog__container {
         @include center-flex();
         height: 100%;
         width: 30px;

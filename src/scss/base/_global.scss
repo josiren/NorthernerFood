@@ -15,6 +15,7 @@ body {
   color: $text-base;
   background: $bg-main;
   text-rendering: geometricPrecision;
+  overflow: scroll;
 }
 
 .primary-h2 {
@@ -41,6 +42,29 @@ body {
   align-items: center;
   gap: 25px;
   color: $grayscale-medium;
+}
+
+//Проверка - на какой странице находимся
+.l-main__page-check {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  font-size: 12px;
+  max-width: 1209px;
+  margin: 29px auto 0;
+
+  .secondary__img {
+    margin-left: 4px;
+  }
+
+  .page-check__before-page {
+    color: $text-base;
+  }
+
+  .page-check__current-page {
+    color: $grayscale-medium-alt;
+    margin-left: 5px;
+  }
 }
 
 a {
