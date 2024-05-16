@@ -19,11 +19,10 @@ const catalogElements = document.querySelectorAll('.container__select-item');
 catalogElements.forEach((item, index) => {
   const element = item;
   element.style.backgroundSize = 'cover';
-  element.style.backgroundPosition = '0% 100%, center';
   element.style.backgroundRepeat = 'no-repeat';
   if (index === 1) {
     element.style.background = `linear-gradient(180deg, rgba(255, 102, 51, 0) 0%, #f63 100%), url(${imageSources[index]})`;
   } else {
-    element.style.background = `linear-gradient(180deg, transparent 50%, #70C05B 100%), url(${imageSources[index]})`;
+    element.style.background = `linear-gradient(180deg, transparent 35%, #70c05b 90%), url(${imageSources[index]})`;
   }
 });
