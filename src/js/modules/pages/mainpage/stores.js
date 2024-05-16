@@ -8,11 +8,15 @@ const pointLinks = [
 const iframeElement = document.querySelector('.map__item');
 const selectPoint = document.querySelectorAll('.points__item');
 
-selectPoint.forEach((point, index) => {
-  point.addEventListener('click', () => {
-    selectPoint.forEach((p) => p.classList.remove('selected'));
-    point.classList.add('selected');
+export default {
+  init() {
+    selectPoint.forEach((point, index) => {
+      point.addEventListener('click', () => {
+        selectPoint.forEach((p) => p.classList.remove('selected'));
+        point.classList.add('selected');
 
-    iframeElement.src = pointLinks[index];
-  });
-});
+        iframeElement.src = pointLinks[index];
+      });
+    });
+  },
+};

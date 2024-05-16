@@ -1,9 +1,11 @@
-// eslint-disable-next-line camelcase
-const likeBtn = document.getElementsByClassName('item__img__like-btn');
-// eslint-disable-next-line no-plusplus
-for (let i = 0; i < likeBtn.length; i++) {
-  // eslint-disable-next-line func-names
-  likeBtn[i].addEventListener('click', function () {
-    this.classList.toggle('liked');
-  });
-}
+const likeBtn = document.querySelectorAll('.item__img__like-btn');
+
+export default {
+  init() {
+    likeBtn.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        btn.classList.toggle('liked');
+      });
+    });
+  },
+};

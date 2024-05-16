@@ -13,10 +13,11 @@ documentReady(() => {
   resize.init();
   cssVars.init();
   lazyload.init();
+  catalog.init();
+  stores.init();
+  product.init();
 });
 
 documentLoaded(() => {
-  product.init();
-  stores.init();
-  catalog.init();
+  //
 });
