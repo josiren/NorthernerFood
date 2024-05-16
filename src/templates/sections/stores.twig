@@ -1,10 +1,74 @@
 <section class="l-main__stores">
     <h2 class="stores__text primary-h2">Наши магазины</h2>
+
     <div class="stores__points">
         <input type="button" class="points__item selected" value="п.Щельяюр">
         <input type="button" class="points__item" value="д.Вертеп">
         <input type="button" class="points__item" value="с.Краснобор">
         <input type="button" class="points__item" value="д.Диюр">
+    </div>
+
+    <div class="stores__container">
+        <div class="container__item">
+            <div class="item__img">
+                {{ inc.inlineSvg('logo', '../static/img/sections/stores/market1.svg') }}
+            </div>
+            <div class="item__container">
+                <div class="item__description">
+                    <div class="description__image"> {{ inc.inlineSvg('logo', '../static/img/home.svg') }}</div>
+                    <h3 class="description__name">ул. Дорожная 10</h3>
+                </div>
+                <div class="item__description">
+                    <div class="description__image">{{ inc.inlineSvg('logo', '../static/img/phone.svg') }}</div>
+                    <h3 class="description__phone">+7 904 271 35 90</h3>
+                </div>
+            </div>
+        </div>
+        <div class="container__item">
+            <div class="item__img">
+                {{ inc.inlineSvg('logo', '../static/img/sections/stores/market2.svg') }}
+            </div>
+            <div class="item__container">
+                <div class="item__description">
+                    <div class="description__image"> {{ inc.inlineSvg('logo', '../static/img/home.svg') }}</div>
+                    <h3 class="description__name">ул. Советская 87</h3>
+                </div>
+                <div class="item__description">
+                    <div class="description__image">{{ inc.inlineSvg('logo', '../static/img/phone.svg') }}</div>
+                    <h3 class="description__phone">+7 82140 91330</h3>
+                </div>
+            </div>
+        </div>
+        <div class="container__item">
+            <div class="item__img">
+                {{ inc.inlineSvg('logo', '../static/img/sections/stores/market3.svg') }}
+            </div>
+            <div class="item__container">
+                <div class="item__description">
+                    <div class="description__image"> {{ inc.inlineSvg('logo', '../static/img/home.svg') }}</div>
+                    <h3 class="description__name">ул. Заводская 16</h3>
+                </div>
+                <div class="item__description">
+                    <div class="description__image">{{ inc.inlineSvg('logo', '../static/img/phone.svg') }}</div>
+                    <h3 class="description__phone">+7 82140 91101</h3>
+                </div>
+            </div>
+        </div>
+        <div class="container__item">
+            <div class="item__img">
+                {{ inc.inlineSvg('logo', '../static/img/sections/stores/market4.svg') }}
+            </div>
+            <div class="item__container">
+                <div class="item__description">
+                    <div class="description__image"> {{ inc.inlineSvg('logo', '../static/img/home.svg') }}</div>
+                    <h3 class="description__name">ул. Рабочая 1</h3>
+                </div>
+                <div class="item__description">
+                    <div class="description__image">{{ inc.inlineSvg('logo', '../static/img/phone.svg') }}</div>
+                    <h3 class="description__phone">+7 82140 91300</h3>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="stores__map">
         <iframe class="map__item selected" src="https://yandex.ru/map-widget/v1/?um=constructor%3A413562c576579b54c52c9405fc8e8ad01e11d2c665b778dcbb9feb8a6e95e55e&amp;source=constructor" width="1208" height="534" frameborder="0"></iframe>

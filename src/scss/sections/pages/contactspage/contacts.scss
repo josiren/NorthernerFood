@@ -1,0 +1,54 @@
+$b: '.l-main';
+
+#{$b} {
+  &__contacts {
+    margin-top: 33px;
+
+    .contacts__container {
+      display: flex;
+      gap: 90px;
+      margin-top: 48px;
+      align-items: center;
+
+      .container__item {
+        display: flex;
+        gap: 8px;
+        font-size: 24px;
+        color: $text-base;
+
+        .item__img {
+          height: 30px;
+        }
+
+        .item__description {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+
+          .description__phone {
+            font-weight: bold;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  .stores__points .points__item {
+    width: 121px;
+    height: 40px;
+    font-size: 16px;
+
+    &:nth-child(2) {
+      width: 110px;
+    }
+
+    &:nth-child(3) {
+      width: 147px;
+    }
+
+    &:nth-child(4) {
+      width: 116px;
+    }
+  }
+}

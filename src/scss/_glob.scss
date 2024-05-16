@@ -10,8 +10,11 @@
 // Sections
 @import 'sections/*.scss';
 
-//Main page scss
+//Main page
 @import 'sections/pages/mainpage/*.scss';
 
-//Catalog page scss
+//Catalog page
 @import 'sections/pages/catalogpage/*.scss';
+
+//Contacts page
+@import 'sections/pages/contactspage/*.scss';

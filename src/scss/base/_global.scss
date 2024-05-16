@@ -67,6 +67,17 @@ body {
   }
 }
 
+.title-page {
+  color: #414141;
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1208px;
+}
+
 a {
   transition: $g-transition;
 }

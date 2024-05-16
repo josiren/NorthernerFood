@@ -15,10 +15,9 @@ $b: ".l-main";
       .points__item {
         padding: 8px;
         background-color: $bg-buttons-secondary-muted-alt;
+        border-radius: 4px;
         width: 97px;
         height: 32px;
-        font-size: 12px;
-        border-radius: 4px;
         color: $grayscale-medium;
         transition: $g-transition;
 
@@ -61,6 +60,43 @@ $b: ".l-main";
 
       &.selected {
         display: flex;
+      }
+    }
+  }
+
+  .stores__container {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin-top: 32px;
+
+    .container__item {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      font-size: 18px;
+
+      .item__img {
+        height: 20px;
+        width: 145px;
+      }
+
+      .item__container {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        .item__description {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 8px;
+
+          .description__image {
+            height: 30px;
+            width: 30px;
+          }
+        }
       }
     }
   }

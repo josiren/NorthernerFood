@@ -2,14 +2,7 @@ $b: '.l-main';
 
 #{$b} {
   &__catalog-select {
-    max-width: 1208px;
-    margin: 33px auto 0;
-
-    .catalog-select__title {
-      font-size: 64px;
-      color: $text-base;
-      font-weight: bold;
-    }
+    margin-top: 33px;
 
     .catalog-select__container {
       display: grid;
