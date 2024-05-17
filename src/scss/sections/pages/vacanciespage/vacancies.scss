@@ -1,0 +1,63 @@
+$b: '.l-main';
+
+#{$b} {
+  &__vacancies {
+    margin-top: 33px;
+
+    .vacancies__container {
+      display: flex;
+      gap: 40px;
+      margin-top: 65px;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .container__item {
+        padding: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        flex-wrap: wrap;
+        background-color: $bg-main;
+        max-width: 376px;
+
+        .item__title {
+          font-size: 24px;
+          font-weight: bold;
+          line-height: 36px;
+        }
+
+        .item__description {
+          display: flex;
+          gap: 8px;
+          flex-direction: column;
+
+          .description__title {
+            font-size: 18px;
+            line-height: 27px;
+          }
+
+          .description__text {
+            font-size: 16px;
+            line-height: 24px;
+          }
+
+          .description__phone {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+
+            .phone__img {
+              height: 30px;
+              width: 30px;
+            }
+
+            .phone__text {
+              font-size: 18px;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}
