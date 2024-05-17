@@ -15,7 +15,7 @@ body {
   color: $text-base;
   background: $bg-main;
   text-rendering: geometricPrecision;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .primary-h2 {
