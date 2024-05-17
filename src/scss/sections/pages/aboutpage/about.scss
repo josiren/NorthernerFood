@@ -3,7 +3,6 @@ $b: '.l-main';
 #{$b} {
   background-image: url("../img/pages/aboutpage/background.svg");
   background-position: top 14% center;
-  z-index: 1;
   position: relative;
 
   &__about {
@@ -13,7 +12,6 @@ $b: '.l-main';
     .about__container {
       display: flex;
       gap: 120px;
-      z-index: 2;
       flex-direction: column;
 
       .main__item {
