@@ -7,6 +7,25 @@ $b: '.item__product-container';
     max-width: 272px;
     border-radius: 0 0 4px 4px;
     box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.1);
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: $bg-main;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: $g-transition;
+    }
+
+    &.is-active::after {
+      visibility: visible;
+      opacity: 0.6;
+    }
 
     .item__img {
       position: relative;

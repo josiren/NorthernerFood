@@ -118,6 +118,7 @@ $b: '.site-header';
       gap: 8px;
       flex-grow: 1;
       max-width: 65px;
+      position: relative;
 
       .item__img {
         width: 24px;
@@ -126,6 +127,23 @@ $b: '.site-header';
 
       .item__text {
         font-size: 12px;
+      }
+
+      .basket__amount {
+        border-radius: 4px;
+        background-color: $bg-primary;
+        position: absolute;
+        font-weight: bold;
+        color: $text-secondary;
+        padding: 2px 4px;
+        width: 11.28px;
+        height: 11px;
+        font-size: 6px;
+        top: -3px;
+        visibility: hidden;
+        display: flex;
+        justify-content: center;
+        right: 13px;
       }
     }
   }
@@ -180,6 +198,7 @@ $b: '.site-header';
 
     .menu__item__text {
       cursor: pointer;
+      transition: $g-transition;
 
       &:hover {
         color: $orange-true;
