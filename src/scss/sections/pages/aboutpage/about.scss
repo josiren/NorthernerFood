@@ -3,11 +3,9 @@ $b: '.l-main';
 #{$b} {
   background-image: url("../img/pages/aboutpage/background.svg");
   background-position: top 8.2% center;
-  position: relative;
 
   &__about {
     margin-top: 33px;
-    position: relative;
 
     .about__container {
       display: flex;

@@ -8,6 +8,7 @@
         <input type="button" class="points__item" value="д.Диюр">
     </div>
 
+    {% if pageTitle == "Контакты" %}
     <div class="stores__container">
         <div class="container__item">
             <div class="item__img">
@@ -70,6 +71,7 @@
             </div>
         </div>
     </div>
+    {% endif %}
     <div class="stores__map">
         <iframe class="map__item selected" src="https://yandex.ru/map-widget/v1/?um=constructor%3A413562c576579b54c52c9405fc8e8ad01e11d2c665b778dcbb9feb8a6e95e55e&amp;source=constructor" width="1208" height="534" frameborder="0"></iframe>
     </div>
