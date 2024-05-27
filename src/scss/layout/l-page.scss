@@ -4,6 +4,7 @@ $b: '.l-page';
   position: relative;
   overflow: hidden;
   display: flex;
+  // Todo этого точно тут не должно быть, сделай отдельный класс если нужно центровать элементы
   margin: 0 auto;
 
   &-layout {

@@ -1,0 +1,19 @@
+{% set pageTitle = 'Главная' %}
+{% set pageClass = 'p-main' %}
+{% extends "layouts/default.twig" %}
+{% block content %}
+    {% includeData 'foo.json' as foo %}
+
+    <div class="l-outer-width l-inner-padding">
+        <p>
+            Пример использования файла для повторяющейся верстки
+        </p>
+        <ul>
+            {% for item in foo.list %}
+                <li>
+                    {{ item.text }}
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}

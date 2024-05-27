@@ -1,3 +1,5 @@
+// Todo тут меняем на подгрузку яндекс карт полноценную и не пергружаем карту при клике
+//  на новую кнопку, а работаем с api и карта должна перелетать в новый город по кординатам
 const pointLinks = [
   'https://yandex.ru/map-widget/v1/?um=constructor%3A413562c576579b54c52c9405fc8e8ad01e11d2c665b778dcbb9feb8a6e95e55e&amp;source=constructor',
   'https://yandex.ru/map-widget/v1/?um=constructor%3A2b073084bf2d874083cdb82ecdc5d8c7e0d457b487f21f0f815a17fd7882c4ee&amp;source=constructor',
