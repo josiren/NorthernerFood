@@ -15,6 +15,7 @@ body {
   color: $text-base;
   background: $bg-main;
   text-rendering: geometricPrecision;
+  // Todo вот так делать чтоно не стоит, если страница не скроллится, строку скролла не должно быть
   overflow-y: scroll;
 }
 
