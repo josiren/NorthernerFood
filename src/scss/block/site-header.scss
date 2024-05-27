@@ -11,6 +11,7 @@ $b: '.site-header';
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   justify-content: space-between;
 
+  // Todo для адаптивов мы используем миксины из файлика _breakpoints.scss, сами медиа запросы не пишем
   @media (width > 1600px) {
     justify-content: center;
     gap: 40px;
