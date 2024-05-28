@@ -11,16 +11,24 @@
             <a class="navigation__text">Политика обработки персональных данных</a>
         </nav>
         <div class="footer-top__social">
-            <div class="social__item">{{ inc.inlineSvg('instagram', '../static/img/modules/footer/social/instagram.svg') }}</div>
-            <div class="social__item">{{ inc.inlineSvg('vkontakte', '../static/img/modules/footer/social/vkontakte.svg') }}</div>
-            <div class="social__item">{{ inc.inlineSvg('facebook', '../static/img/modules/footer/social/facebook.svg') }}</div>
-            <div class="social__item">{{ inc.inlineSvg('ok', '../static/img/modules/footer/social/ok.svg') }}</div>
+            <a href="https://instagram.com/" class="social__item-link">
+                <div class="social__item">{{ inc.inlineSvg('instagram', '../static/img/modules/footer/social/instagram.svg') }}</div>
+            </a>
+            <a href="https://vk.com/" class="social__item-link">
+                <div class="social__item">{{ inc.inlineSvg('vkontakte', '../static/img/modules/footer/social/vkontakte.svg') }}</div>
+            </a>
+            <a href="https://facebook.com/" class="social__item-link">
+                <div class="social__item">{{ inc.inlineSvg('facebook', '../static/img/modules/footer/social/facebook.svg') }}</div>
+            </a>
+            <a href="https://ok.ru/" class="social__item-link">
+                <div class="social__item">{{ inc.inlineSvg('ok', '../static/img/modules/footer/social/ok.svg') }}</div>
+            </a>
         </div>
         <div class="footer-top__social-phone">
             <div class="social-phone__img">
                 {{ inc.inlineSvg('phone', '../static/img/phone.svg') }}
             </div>
-            <p class="social-phone__text">8 800 777 33 33</p>
+            <a href="tel:+78007773333" class="social-phone__text">8 800 777 33 33</a>
         </div>
     </div>
     <div class="footer-bottom">

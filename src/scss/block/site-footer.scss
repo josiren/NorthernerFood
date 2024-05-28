@@ -1,5 +1,3 @@
-// Todo вот тут у тебя уже написан стандартный класс, почему бы не использовать его,
-//  зачем ниже ты используешь просто footer, давай унифицируем, базовый класс по бэм должен быть один
 $b: '.site-footer';
 
 #{$b} {
@@ -19,7 +17,7 @@ $b: '.site-footer';
     justify-content: space-between;
     align-items: center;
 
-    @media (width >= 1600px) {
+    @include wide-desktop-min() {
       justify-content: center;
     }
 
@@ -76,7 +74,7 @@ $b: '.site-footer';
     display: flex;
     align-items: center;
 
-    @media (width >= 1600px) {
+    @include wide-desktop-min() {
       margin-right: 14.4%;
     }
 

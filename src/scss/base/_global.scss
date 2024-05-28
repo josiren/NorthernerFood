@@ -15,8 +15,6 @@ body {
   color: $text-base;
   background: $bg-main;
   text-rendering: geometricPrecision;
-  // Todo вот так делать чтоно не стоит, если страница не скроллится, строку скролла не должно быть
-  overflow-y: scroll;
 }
 
 .primary-h2 {
@@ -69,12 +67,11 @@ body {
 }
 
 .title-page {
-  // Todo все цвета должны хранится в файлике src/scss/base/_settings.scss в переменных
-  color: #414141;
+  color: $text-base;
   font-size: 64px;
   font-weight: 700;
 }
-// Todo для max-width есть класс l-outer-width он находится в файле l-outer-width.scss, используй его
+
 .container {
   margin: 0 auto;
   max-width: 1208px;
