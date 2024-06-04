@@ -74,6 +74,7 @@
     "intersection-observer": "^0.12.0",
     "lozad": "^1.16.0",
     "normalize.css": "^8.0.1",
-    "vue": "^2.6.14"
+    "vue": "^2.6.14",
+    "ymaps": "^0.2.1"
   }
 }
