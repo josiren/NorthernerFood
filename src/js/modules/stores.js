@@ -6,7 +6,7 @@ export default {
   init() {
     ymaps.ready(() => {
       const map = new ymaps.Map(
-        document.querySelector('.map__item'),
+        document.querySelector('.stores__map'),
         {
           center: [65.325869, 53.417914],
           zoom: 15,
