@@ -4,8 +4,7 @@ $b: ".l-main";
   &__offers {
     display: flex;
     flex-direction: column;
-    margin: 120px auto 0;
-    max-width: 1208px;
+    margin-top: 120px;
     gap: 40px;
 
     .offers_items {

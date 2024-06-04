@@ -12,7 +12,6 @@ $b: ".l-main";
     display: flex;
     flex-direction: column;
     gap: 42px;
-    margin: 0 auto;
 
     &:nth-last-child(-n + 2) .item__img__discount-info,
     &:nth-last-child(-n + 2) .by-card__info,

@@ -2,10 +2,9 @@ $b: '.l-main';
 
 #{$b} {
   &__articles {
-    margin: 125px auto 0;
+    margin-top: 125px;
     display: flex;
     flex-direction: column;
-    max-width: 1208px;
 
     .articles__container {
       display: flex;
