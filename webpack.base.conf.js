@@ -5,7 +5,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { VueLoaderPlugin } = require('vue-loader');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const packageJSON = require('./package');
-const yandexApi = "21ecd16b-29a1-42e7-ae0e-9efa979ba5a6";
+
+const yandexApi = '21ecd16b-29a1-42e7-ae0e-9efa979ba5a6';
 
 const PATHS = {
   src: path.join(__dirname, './src'),
@@ -21,7 +22,7 @@ module.exports = {
   externalsType: 'script',
   externals: {
     paths: PATHS,
-    ymaps: ['https://api-maps.yandex.ru/2.1/?apikey=' + yandexApi + '&lang=ru_RU', 'ymaps'],
+    ymaps: [`https://api-maps.yandex.ru/2.1/?apikey=${yandexApi}&lang=ru_RU`, 'ymaps'],
   },
   entry: {
     app: PATHS.src,
