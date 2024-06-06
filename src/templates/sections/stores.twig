@@ -1,11 +1,11 @@
 <section class="l-main__stores l-outer-width">
     <h2 class="stores__text primary-h2">Наши магазины</h2>
 
-    <div class="stores__points">
-        <input type="button" class="points__item selected" value="п.Щельяюр">
-        <input type="button" class="points__item" value="д.Вертеп">
-        <input type="button" class="points__item" value="с.Краснобор">
-        <input type="button" class="points__item" value="д.Диюр">
+    <div class="stores__points{% if pageTitle == "Контакты" %} contacts{% endif %}">
+        <button type="button" class="points__item selected">п.Щельяюр</button>
+        <button type="button" class="points__item">д.Вертеп</button>
+        <button type="button" class="points__item">с.Краснобор</button>
+        <button type="button" class="points__item">д.Диюр</button>
     </div>
 
     {% if pageTitle == "Контакты" %}

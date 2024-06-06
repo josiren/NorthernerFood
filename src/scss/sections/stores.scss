@@ -11,12 +11,33 @@ $b: ".l-main";
       gap: 24px;
       margin-top: 40px;
 
+      &.contacts {
+        .points__item {
+          width: 121px;
+          height: 40px;
+          font-size: 16px;
+
+          &:nth-child(2) {
+            width: 110px;
+          }
+
+          &:nth-child(3) {
+            width: 147px;
+          }
+
+          &:nth-child(4) {
+            width: 116px;
+          }
+        }
+      }
+
       .points__item {
         padding: 8px;
         background-color: $bg-buttons-secondary-muted-alt;
         border-radius: 4px;
         width: 97px;
         height: 32px;
+        font-size: 12px;
         color: $grayscale-medium;
         transition: $g-transition;
 
@@ -38,7 +59,7 @@ $b: ".l-main";
         }
 
         &:nth-child(3) {
-          width: 103px;
+          width: 104px;
         }
 
         &:nth-child(4) {
