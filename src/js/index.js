@@ -8,14 +8,12 @@ import lazyload from './modules/lazyload';
 import stores from './modules/stores';
 import header from './modules/site-header';
 import product from './modules/product';
-import catalog from './modules/pages/catalogpage/catalog';
 
 documentReady(() => {
   resize.init();
   cssVars.init();
   lazyload.init();
   stores.init();
-  catalog.init();
   product.init();
   header.init();
 });

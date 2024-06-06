@@ -17,6 +17,7 @@ $b: '.l-main';
         display: flex;
         align-items: flex-end;
         border-radius: 4px;
+        transition: $g-transition;
 
         .select__item__text {
           font-size: 18px;
@@ -26,6 +27,61 @@ $b: '.l-main';
 
         &:nth-child(1) {
           grid-column: span 2;
+          background: linear-gradient(180deg, transparent 35%, #70c05b 90%), url("../img/pages/catalogpage/1.jpg");
+        }
+
+        &:nth-child(2) {
+          background: linear-gradient(180deg, rgba(255, 102, 51, 0) 0%, #f63 100%), url("../img/pages/catalogpage/2.jpg");
+
+          &:hover {
+            box-shadow: $shadow-base;
+          }
+        }
+
+        &:nth-child(3) {
+          background: linear-gradient(180deg, transparent 35%, #70c05b 90%), url("../img/pages/catalogpage/3.jpg");
+        }
+
+        &:nth-child(4) {
+          background: linear-gradient(180deg, transparent 35%, #70c05b 90%), url("../img/pages/catalogpage/4.jpg");
+        }
+
+        &:nth-child(5) {
+          background: linear-gradient(180deg, transparent 35%, #70c05b 90%), url("../img/pages/catalogpage/5.jpg");
+        }
+
+        &:nth-child(6) {
+          background: linear-gradient(180deg, transparent 35%, #70c05b 90%), url("../img/pages/catalogpage/6.jpg");
+        }
+
+        &:nth-child(7) {
+          background: linear-gradient(180deg, transparent 35%, #70c05b 90%), url("../img/pages/catalogpage/7.jpg");
+        }
+
+        &:nth-child(8) {
+          background: linear-gradient(180deg, transparent 35%, #70c05b 90%), url("../img/pages/catalogpage/8.jpg");
+        }
+
+        &:nth-child(9) {
+          background: linear-gradient(180deg, transparent 35%, #70c05b 90%), url("../img/pages/catalogpage/9.jpg");
+        }
+
+        &:nth-child(10) {
+          grid-column: span 2;
+          background: linear-gradient(180deg, transparent 35%, #70c05b 90%), url("../img/pages/catalogpage/10.jpg");
+        }
+
+        &:nth-child(11) {
+          background: linear-gradient(180deg, transparent 35%, #70c05b 90%), url("../img/pages/catalogpage/11.jpg");
+        }
+
+        &:nth-child(12) {
+          grid-column: span 2;
+          background: linear-gradient(180deg, transparent 35%, #70c05b 90%), url("../img/pages/catalogpage/12.jpg");
+        }
+
+        &:nth-child(13) {
+          background: linear-gradient(180deg, transparent 35%, #70c05b 90%), url("../img/pages/catalogpage/13.jpg");
         }
 
         &:nth-child(2),
@@ -45,17 +101,13 @@ $b: '.l-main';
           grid-column: span 1;
         }
 
-        &:nth-child(10) {
-          grid-column: span 2;
-        }
-
         &:nth-child(11),
         &:nth-child(13) {
           grid-column: span 1;
         }
 
-        &:nth-child(12) {
-          grid-column: span 2;
+        &:nth-child(n + 1):nth-child(-n + 13):not(:nth-child(2)):hover {
+          box-shadow: $shadow-secondary;
         }
       }
     }
