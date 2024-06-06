@@ -1,8 +1,10 @@
 $b: '.l-main';
 
 #{$b} {
-  background-image: url("../img/pages/aboutpage/background.svg");
-  background-position: top 8.2% center;
+  &.about {
+    background-image: url("../img/pages/aboutpage/background.svg");
+    background-position: top 8.2% center;
+  }
 
   &__about {
     margin-top: 33px;
