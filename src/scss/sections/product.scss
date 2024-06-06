@@ -45,7 +45,7 @@ $b: '.item__product-container';
           transition: $g-transition;
 
           &:hover {
-            fill: #fcd5ba;
+            fill: $bg-liked;
           }
         }
 
@@ -58,7 +58,7 @@ $b: '.item__product-container';
             fill: transparent;
 
             &:hover {
-              fill: #fcd5ba;
+              fill: $bg-liked;
             }
           }
         }
