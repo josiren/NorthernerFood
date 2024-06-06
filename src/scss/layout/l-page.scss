@@ -3,8 +3,6 @@ $b: '.l-page';
 #{$b} {
   position: relative;
   overflow: hidden;
-  display: flex;
-  margin: 0 auto;
 
   &-layout {
     @include true-vh('min-height', 100);
