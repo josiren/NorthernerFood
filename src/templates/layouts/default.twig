@@ -7,7 +7,7 @@
     {% include "modules/site-preloader.twig" %}
     <div class="l-page-layout">
         {% include "modules/site-header.twig" %}
-        <main class="l-main{% if pageTitle == 'О компании' %} about{% endif %}">
+        <main class="l-main l-bottom-padding{% if pageTitle == 'О компании' %} about{% endif %}">
             {% block content %}{% endblock %}
         </main>
         {% include "modules/site-footer.twig" %}
