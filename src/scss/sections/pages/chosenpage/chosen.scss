@@ -1,0 +1,13 @@
+$b: '.l-main';
+
+#{$b} {
+  &__chosen {
+    margin-top: 33px;
+
+    .chosen__container {
+      margin-top: 65px;
+      display: flex;
+      gap: 40px;
+    }
+  }
+}

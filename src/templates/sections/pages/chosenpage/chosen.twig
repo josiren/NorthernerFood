@@ -1,0 +1,12 @@
+<div class="l-main__chosen l-outer-width">
+    <h1 class="chosen__title title-page">{{ pageTitle }}</h1>
+    <div class="chosen__container">
+        <div class="container__filter filter">
+            {% include "sections/filter.twig" %}
+        </div>
+        <div class="container__item">
+            <div class="item_filters"></div>
+            {% include "sections/product.twig" %}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+<div class="filter">
+    <p class="filter__title">Фильтр</p>
+    <div class="filter__price">
+        <div class="price__title">
+            <h3 class="title__text">Цена</h3>
+            <button type="button" class="title__clear-btn">Очистить</button>
+        </div>
+        <div class="price__value">
+            <input type="text" class="value__first" placeholder="1" maxlength="5" readonly />
+            <div class="value__stroke">{{ inc.inlineSvg('shape', '../static/img/sections/filter/shape.svg') }}</div>
+            <input type="text" class="value__secondary" placeholder="100" maxlength="5" readonly/>
+        </div>
+        <div class="price__select"></div>
+    </div>
+    <div class="filter__categories">
+        <h3 class="categories__milk">Молоко</h3>
+        <h3 class="categories__cream">Сливки</h3>
+        <h3 class="categories__egg">Яйцо</h3>
+    </div>
+    <div class="filter__available-switch">
+        <label class="available-switch__switch">
+            <input type="checkbox" class="switch__checkbox">
+            <span class="switch__slider"></span>
+        </label>
+        <h3 class="available-switch__title">В наличии</h3>
+    </div>
+    <button type="button" class="filter__apply-btn">Применить</button>
+</div>

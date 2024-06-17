@@ -8,6 +8,7 @@ import lazyload from './modules/lazyload';
 import stores from './modules/stores';
 import header from './modules/site-header';
 import product from './modules/product';
+import filter from './modules/filter';
 
 documentReady(() => {
   resize.init();
@@ -16,6 +17,7 @@ documentReady(() => {
   stores.init();
   product.init();
   header.init();
+  filter.init();
 });
 
 documentLoaded(() => {

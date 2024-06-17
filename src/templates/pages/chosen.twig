@@ -1,7 +1,8 @@
 {% set pageTitle = 'Избранное' %}
-{% set pageClass = 'p-chosen' %}
+{% set pageClass = 'p-chosenpage' %}
 {% extends "layouts/default.twig" %}
 
 {% block content %}
     {% include "sections/pagecheck.twig" %}
+    {% include "sections/pages/chosenpage/chosen.twig" %}
 {% endblock %}
