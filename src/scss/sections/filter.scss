@@ -76,6 +76,7 @@ html .ui-button.ui-state-disabled:active {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: 5px;
 
       .value__first,
       .value__secondary {
@@ -85,6 +86,11 @@ html .ui-button.ui-state-disabled:active {
         border: 1px solid $grayscale-light;
         color: $text-base;
         padding: 8px 16px;
+      }
+
+      .value__stroke {
+        width: 15px;
+        height: 1px;
       }
     }
 

@@ -1,134 +1,140 @@
-$b: '.item__product-container';
+$b: '.l-main';
 
 #{$b} {
-  .product-container__item {
-    background-color: $bg-main;
-    flex-grow: 1;
-    max-width: 272px;
-    border-radius: 0 0 4px 4px;
-    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.1);
-    position: relative;
+  .item__product-container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
 
-    &::after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background: $bg-main;
-      top: 0;
-      left: 0;
-      opacity: 0;
-      visibility: hidden;
-      transition: $g-transition;
-    }
-
-    &.is-active::after {
-      visibility: visible;
-      opacity: 0.6;
-    }
-
-    .item__img {
+    .product-container__item {
+      background-color: $bg-main;
+      flex-grow: 1;
+      max-width: 272px;
+      border-radius: 0 0 4px 4px;
+      box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.1);
       position: relative;
 
-      .item__img__like-btn,
-      .item__img__discount-info {
+      &::after {
+        content: "";
         position: absolute;
+        width: 100%;
+        height: 100%;
+        background: $bg-main;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: $g-transition;
       }
 
-      .item__img__like-btn {
-        top: 8px;
-        right: 8px;
-        width: 32px;
-        height: 32px;
+      &.is-active::after {
+        visibility: visible;
+        opacity: 0.6;
+      }
 
-        rect {
-          transition: $g-transition;
+      .item__img {
+        position: relative;
 
-          &:hover {
-            fill: $bg-liked;
-          }
+        .item__img__like-btn,
+        .item__img__discount-info {
+          position: absolute;
         }
 
-        &.liked {
-          g {
-            opacity: 1;
-          }
+        .item__img__like-btn {
+          top: 8px;
+          right: 8px;
+          width: 32px;
+          height: 32px;
 
           rect {
-            fill: transparent;
+            transition: $g-transition;
 
             &:hover {
               fill: $bg-liked;
             }
           }
-        }
-      }
 
-      .item__img__discount-info {
-        bottom: 14.4px;
-        left: 10px;
-        color: $text-secondary;
-        background-color: $bg-primary;
-        border-radius: 4px;
-        padding: 4px 8px 4px 8px;
-      }
-    }
+          &.liked {
+            g {
+              opacity: 1;
+            }
 
-    .item__description {
-      display: flex;
-      flex-direction: column;
-      gap: 9px;
-      padding: 8px;
+            rect {
+              fill: transparent;
 
-      .description__price {
-        display: flex;
-        justify-content: space-between;
-        height: 45px;
-
-        .by-card__price {
-          font-size: 18px;
-          font-weight: bold;
+              &:hover {
+                fill: $bg-liked;
+              }
+            }
+          }
         }
 
-        .standard__price {
-          margin-right: 3px;
-        }
-
-        .standard__info {
-          text-align: right;
-        }
-
-        .price-desc {
-          font-size: 12px;
-          color: $grayscale-light;
-        }
-
-        .price__vault {
-          margin-left: 4px;
-        }
-      }
-
-      .description__title {
-        line-height: 22px;
-      }
-
-      .description__rating {
-        height: 16px;
-      }
-
-      .description__basket-btn {
-        height: 40px;
-        border-radius: 4px;
-        border: 1px solid $bg-buttons-secondary;
-        background-color: $bg-main;
-        color: $bg-buttons-secondary;
-        transition: $g-transition;
-        align-self: auto;
-
-        &:hover {
-          background-color: $bg-primary;
-          border: 0;
+        .item__img__discount-info {
+          bottom: 14.4px;
+          left: 10px;
           color: $text-secondary;
+          background-color: $bg-primary;
+          border-radius: 4px;
+          padding: 4px 8px 4px 8px;
+        }
+      }
+
+      .item__description {
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+        padding: 8px;
+
+        .description__price {
+          display: flex;
+          justify-content: space-between;
+          height: 45px;
+
+          .by-card__price {
+            font-size: 18px;
+            font-weight: bold;
+          }
+
+          .standard__price {
+            margin-right: 3px;
+          }
+
+          .standard__info {
+            text-align: right;
+          }
+
+          .price-desc {
+            font-size: 12px;
+            color: $grayscale-light;
+          }
+
+          .price__vault {
+            margin-left: 4px;
+          }
+        }
+
+        .description__title {
+          line-height: 22px;
+        }
+
+        .description__rating {
+          height: 16px;
+        }
+
+        .description__basket-btn {
+          height: 40px;
+          border-radius: 4px;
+          border: 1px solid $bg-buttons-secondary;
+          background-color: $bg-main;
+          color: $bg-buttons-secondary;
+          transition: $g-transition;
+          align-self: auto;
+
+          &:hover {
+            background-color: $bg-primary;
+            border: 0;
+            color: $text-secondary;
+          }
         }
       }
     }

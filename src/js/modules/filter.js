@@ -18,7 +18,7 @@ export default {
       min: minValue,
       max: maxValue,
       step: 100,
-      values: [minValue, maxValue],
+      values: [1000, 3800],
       slide: (event, ui) => {
         valueFirst.val(`${ui.values[0]}`);
         valueSecondary.val(`${ui.values[1]}`);
@@ -26,7 +26,7 @@ export default {
     });
 
     clearPriceBtn.on('click', () => {
-      Slider.slider('values', [minValue, maxValue]);
+      Slider.slider('values', [1000, 3800]);
       valueFirst.val('');
       valueSecondary.val('');
     });

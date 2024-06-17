@@ -18,10 +18,5 @@ $b: ".l-main";
     &:nth-last-child(-n + 2) .price__standard {
       display: none;
     }
-
-    .item__product-container {
-      display: flex;
-      gap: 40px;
-    }
   }
 }
