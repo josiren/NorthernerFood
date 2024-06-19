@@ -43,9 +43,8 @@ export default {
       valueSecondary.val('');
     });
 
-    // addActiveCategoryClass
-    const categoriesFilters = document.querySelectorAll('.categories__item');
     // toggleActiveForCategory
+    const categoriesFilters = document.querySelectorAll('.categories__item');
     categoriesFilters.forEach((filter) => {
       filter.addEventListener('click', () => {
         filter.classList.toggle('is-active');
