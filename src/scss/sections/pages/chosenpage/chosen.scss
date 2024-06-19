@@ -8,6 +8,50 @@ $b: '.l-main';
       margin-top: 65px;
       display: flex;
       gap: 40px;
+
+      .container__item {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .item__filters {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+
+          .filters__item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 100px;
+            height: 32px;
+            background-color: $bg-buttons-secondary;
+            border-radius: 4px;
+            padding: 8px;
+            max-width: 184px;
+            cursor: pointer;
+
+            .item__text {
+              color: $text-secondary;
+              font-size: 12px;
+              padding: 8px;
+            }
+
+            .item__img {
+              width: 24px;
+              height: 24px;
+            }
+
+            &.clearAll {
+              background-color: $bg-buttons-secondary-muted-alt;
+
+              .item__text {
+                color: $text-base;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

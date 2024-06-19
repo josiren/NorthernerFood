@@ -6,16 +6,16 @@
             <button type="button" class="title__clear-btn">Очистить</button>
         </div>
         <div class="price__value">
-            <input type="text" class="value__first" placeholder="1" maxlength="5" readonly />
+            <input type="text" class="value__first" placeholder="1" maxlength="4" />
             <div class="value__stroke">{{ inc.inlineSvg('shape', '../static/img/sections/filter/shape.svg') }}</div>
-            <input type="text" class="value__secondary" placeholder="100" maxlength="5" readonly/>
+            <input type="text" class="value__secondary" placeholder="100" maxlength="4" />
         </div>
         <div class="price__select"></div>
     </div>
     <div class="filter__categories">
-        <h3 class="categories__milk">Молоко</h3>
-        <h3 class="categories__cream">Сливки</h3>
-        <h3 class="categories__egg">Яйцо</h3>
+        <button type="button" class="categories__item">Молоко</button>
+        <button type="button" class="categories__item">Сливки</button>
+        <button type="button" class="categories__item">Яйцо</button>
     </div>
     <div class="filter__available-switch">
         <label class="available-switch__switch">
