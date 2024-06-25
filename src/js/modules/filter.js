@@ -82,6 +82,9 @@ export default {
         if (priceText) {
           priceText.textContent = `Цена от ${valueFirst.val()} до ${valueSecondary.val()}`;
         } else {
+          // Todo нужно вынести создание элемента фильтра в функцию, чтобы она тебе возвращала
+          //  верстку кнопки, а ты ее вставлял куда нужно, сейчас у тебя тут и ниже идет 3 куска
+          //  кода которые отличаются совсем немного, надо весь повторяющийся код вынести в функцию
           const priceBlock = document.createElement('div');
           priceBlock.className = 'filters__item';
           const itemText = document.createElement('div');
