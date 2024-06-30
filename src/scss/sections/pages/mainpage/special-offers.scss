@@ -1,62 +1,60 @@
-$b: ".l-main";
+$b: ".l-main__offers";
 
 #{$b} {
-  &__offers {
+  display: flex;
+  flex-direction: column;
+  margin-top: 120px;
+  gap: 40px;
+
+  .offers_items {
     display: flex;
-    flex-direction: column;
-    margin-top: 120px;
     gap: 40px;
 
-    .offers_items {
+    .offer-card {
       display: flex;
-      gap: 40px;
+      flex-basis: 50%;
+      border-radius: 4px;
+      position: relative;
+      justify-content: flex-end;
+      transition: $g-transition;
 
-      .offer-card {
-        display: flex;
-        flex-basis: 50%;
-        border-radius: 4px;
-        position: relative;
-        justify-content: flex-end;
-        transition: $g-transition;
-
-        .offer-card__text {
-          position: absolute;
-          top: 20%;
-          left: 40px;
-          max-width: 258px;
-        }
-
-        .text__title {
-          font-size: 24px;
-          font-weight: bold;
-          max-width: 258px;
-        }
-
-        .text__description {
-          margin-top: 10px;
-        }
+      .offer-card__text {
+        position: absolute;
+        top: 20%;
+        left: 40px;
+        max-width: 258px;
       }
 
-      .items__card-make {
-        background-color: $bg-primary-muted;
-
-        &:hover {
-          box-shadow: 4px 8px 16px 0 rgba(255, 102, 51, 0.2);
-        }
+      .text__title {
+        font-size: 24px;
+        font-weight: bold;
+        max-width: 258px;
       }
 
-      .items__discount-buy {
-        background-color: $bg-secondary-muted;
-        background-image: url("../img/pages/mainpage/special-offers/discount-background.svg");
-        background-position: center center;
+      .text__description {
+        margin-top: 10px;
+      }
+    }
 
-        &:hover {
-          box-shadow: 4px 8px 16px 0 rgba(112, 192, 91, 0.2);
-        }
+    .items__card-make {
+      background-color: $bg-primary-muted;
 
-        img {
-          padding-right: 42px;
-        }
+      &:hover {
+        box-shadow: 4px 8px 16px 0 rgba(255, 102, 51, 0.2);
+      }
+    }
+
+    .items__discount-buy {
+      background-color: $bg-secondary-muted;
+      background-image: url("../img/pages/mainpage/special-offers/discount-background.svg");
+      background-position: center center;
+
+      &:hover {
+        box-shadow: 4px 8px 16px 0 rgba(112, 192, 91, 0.2);
+      }
+
+      img {
+        padding-right: 42px;
       }
     }
   }

@@ -1,14 +1,14 @@
-<div class="l-main__chosen l-outer-width">
+<section class="l-main__chosen l-outer-width">
     <h1 class="chosen__title title-page">{{ pageTitle }}</h1>
     <div class="chosen__container">
-        <div class="container__filter filter">
+        <div class="container__item-filter filter">
             {% include "sections/filter.twig" %}
         </div>
-        <div class="container__item">
+        <div class="container__item products-container__item">
             <div class="item__filters"></div>
             <div class="item__product-container">
                 {% include "sections/product.twig" %}
             </div>
         </div>
     </div>
-</div>
+</section>

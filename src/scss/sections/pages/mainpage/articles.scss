@@ -1,64 +1,62 @@
-$b: '.l-main';
+$b: '.l-main__articles';
 
 #{$b} {
-  &__articles {
-    margin-top: 125px;
+  margin-top: 125px;
+  display: flex;
+  flex-direction: column;
+
+  .articles__container {
     display: flex;
-    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
 
-    .articles__container {
+    .container__item {
       display: flex;
-      gap: 40px;
-      margin-top: 40px;
+      flex-direction: column;
+      max-width: 376px;
+      max-height: 429px;
+      height: auto;
+      background-color: $bg-main;
 
-      .container__item {
+      .item__img {
+        max-height: 165px;
+      }
+
+      .item__description {
+        padding: 10px;
         display: flex;
+        gap: 14px;
         flex-direction: column;
-        max-width: 376px;
-        max-height: 429px;
-        height: auto;
-        background-color: $bg-main;
+        height: 100%;
+        justify-content: space-between;
 
-        .item__img {
-          max-height: 165px;
+        .description__date {
+          font-size: 12px;
+          color: $grayscale-hard-sec;
         }
 
-        .item__description {
-          padding: 10px;
-          display: flex;
-          gap: 14px;
-          flex-direction: column;
-          height: 100%;
-          justify-content: space-between;
+        .description__title {
+          font-size: 18px;
+          color: $text-base;
+          font-weight: bold;
+        }
 
-          .description__date {
-            font-size: 12px;
-            color: $grayscale-hard-sec;
-          }
+        .description__main {
+          line-height: 24px;
+        }
 
-          .description__title {
-            font-size: 18px;
-            color: $text-base;
-            font-weight: bold;
-          }
+        .description__btn {
+          width: 150px;
+          height: 40px;
+          padding: 8px;
+          border-radius: 4px;
+          background-color: $bg-buttons-secondary-muted;
+          color: $bg-buttons-secondary;
+          transition: $g-transition;
 
-          .description__main {
-            line-height: 24px;
-          }
-
-          .description__btn {
-            width: 150px;
-            height: 40px;
-            padding: 8px;
-            border-radius: 4px;
-            background-color: $bg-buttons-secondary-muted;
-            color: $bg-buttons-secondary;
-            transition: $g-transition;
-
-            &:hover {
-              background-color: $bg-buttons-secondary;
-              color: $text-secondary;
-            }
+          &:hover {
+            background-color: $bg-buttons-secondary;
+            color: $text-secondary;
           }
         }
       }

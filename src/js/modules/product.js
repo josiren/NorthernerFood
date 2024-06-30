@@ -7,10 +7,6 @@ BasketAmountElement.className = 'basket__amount';
 BasketAmountElement.textContent = BasketAmount;
 Basket.appendChild(BasketAmountElement);
 
-// Todo если чувствуешь в себе силы можем поработать и сделаем сохранение
-//  добавленных товаров в local-storage или добавление в api
-//  и когда переходишь в корзину чтобы товары там подгружались какие добавил в корзину
-//  приди ко мне с сообщением хочешь ли ты это делать или пока и так много всего?
 export default {
   init() {
     likeBtn.forEach((btn) => {

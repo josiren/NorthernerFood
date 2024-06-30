@@ -1,143 +1,138 @@
-// Todo тут остался старый базовый класс нужно поменять на базовый класс по бэм в зависимости от контента
-//  у тебя тут по логике products или s-products
-$b: '.l-main';
+$b: '.item__product-container';
 
 #{$b} {
-  .item__product-container {
-    display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
 
-    .product-container__item {
-      background-color: $bg-main;
-      flex-grow: 1;
-      max-width: 272px;
-      border-radius: 0 0 4px 4px;
-      box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.1);
+  .product-container__item {
+    background-color: $bg-main;
+    flex-grow: 1;
+    max-width: 272px;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.1);
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: $bg-main;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: $g-transition;
+    }
+
+    &.is-active::after {
+      visibility: visible;
+      opacity: 0.6;
+    }
+
+    .item__img {
       position: relative;
 
-      &::after {
-        content: "";
+      .item__img__like-btn,
+      .item__img__discount-info {
         position: absolute;
-        width: 100%;
-        height: 100%;
-        background: $bg-main;
-        top: 0;
-        left: 0;
-        opacity: 0;
-        visibility: hidden;
-        transition: $g-transition;
       }
 
-      &.is-active::after {
-        visibility: visible;
-        opacity: 0.6;
-      }
+      .item__img__like-btn {
+        top: 8px;
+        right: 8px;
+        width: 32px;
+        height: 32px;
 
-      .item__img {
-        position: relative;
+        rect {
+          transition: $g-transition;
 
-        .item__img__like-btn,
-        .item__img__discount-info {
-          position: absolute;
+          &:hover {
+            fill: $bg-liked;
+          }
         }
 
-        .item__img__like-btn {
-          top: 8px;
-          right: 8px;
-          width: 32px;
-          height: 32px;
+        &.liked {
+          g {
+            opacity: 1;
+          }
 
           rect {
-            transition: $g-transition;
+            fill: transparent;
 
             &:hover {
               fill: $bg-liked;
             }
           }
-
-          // Todo давай еще будем закрашивать сердечко в bg-liked чтобы было более наглядно
-          &.liked {
-            g {
-              opacity: 1;
-            }
-
-            rect {
-              fill: transparent;
-
-              &:hover {
-                fill: $bg-liked;
-              }
-            }
-          }
-        }
-
-        .item__img__discount-info {
-          bottom: 14.4px;
-          left: 10px;
-          color: $text-secondary;
-          background-color: $bg-primary;
-          border-radius: 4px;
-          padding: 4px 8px 4px 8px;
         }
       }
 
-      .item__description {
+      .item__img__discount-info {
+        bottom: 14.4px;
+        left: 10px;
+        color: $text-secondary;
+        background-color: $bg-primary;
+        border-radius: 4px;
+        padding: 4px 8px 4px 8px;
+      }
+    }
+
+    .item__description {
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+      padding: 8px;
+
+      .description__price {
         display: flex;
-        flex-direction: column;
-        gap: 9px;
-        padding: 8px;
+        justify-content: space-between;
+        height: 45px;
 
-        .description__price {
-          display: flex;
-          justify-content: space-between;
-          height: 45px;
-
-          .by-card__price {
-            font-size: 18px;
-            font-weight: bold;
-          }
-
-          .standard__price {
-            margin-right: 3px;
-          }
-
-          .standard__info {
-            text-align: right;
-          }
-
-          .price-desc {
-            font-size: 12px;
-            color: $grayscale-light;
-          }
-
-          .price__vault {
-            margin-left: 4px;
-          }
+        .by-card__price {
+          font-size: 18px;
+          font-weight: bold;
         }
 
-        .description__title {
-          line-height: 22px;
+        .standard__price {
+          margin-right: 3px;
         }
 
-        .description__rating {
-          height: 16px;
+        .standard__info {
+          text-align: right;
         }
 
-        .description__basket-btn {
-          height: 40px;
-          border-radius: 4px;
-          border: 1px solid $bg-buttons-secondary;
-          background-color: $bg-main;
-          color: $bg-buttons-secondary;
-          transition: $g-transition;
-          align-self: auto;
+        .price-desc {
+          font-size: 12px;
+          color: $grayscale-light;
+        }
 
-          &:hover {
-            background-color: $bg-primary;
-            border: 0;
-            color: $text-secondary;
-          }
+        .price__vault {
+          margin-left: 4px;
+        }
+      }
+
+      .description__title {
+        line-height: 22px;
+      }
+
+      .description__rating {
+        height: 16px;
+      }
+
+      .description__basket-btn {
+        height: 40px;
+        border-radius: 4px;
+        border: 1px solid $bg-buttons-secondary;
+        background-color: $bg-main;
+        color: $bg-buttons-secondary;
+        transition: $g-transition;
+        align-self: auto;
+
+        &:hover {
+          background-color: $bg-primary;
+          border: 0;
+          color: $text-secondary;
         }
       }
     }

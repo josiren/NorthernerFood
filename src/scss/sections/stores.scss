@@ -1,85 +1,81 @@
-// Todo тут остался старый базовый класс нужно поменять на базовый класс по бэм в зависимости от контента
-//  у тебя тут по логике stores или s-stores в остальных местах сделать тоже самое
-$b: ".l-main";
+$b: ".l-main__stores";
 
 #{$b} {
-  &__stores {
+  display: flex;
+  flex-direction: column;
+  margin-top: 129px;
+
+  .stores__points {
     display: flex;
-    flex-direction: column;
-    margin-top: 129px;
+    gap: 24px;
+    margin-top: 40px;
 
-    .stores__points {
-      display: flex;
-      gap: 24px;
-      margin-top: 40px;
-
-      &.contacts {
-        .points__item {
-          width: 121px;
-          height: 40px;
-          font-size: 16px;
-
-          &:nth-child(2) {
-            width: 110px;
-          }
-
-          &:nth-child(3) {
-            width: 147px;
-          }
-
-          &:nth-child(4) {
-            width: 116px;
-          }
-        }
-      }
-
+    &.contacts {
       .points__item {
-        padding: 8px;
-        background-color: $bg-buttons-secondary-muted-alt;
-        border-radius: 4px;
-        width: 97px;
-        height: 32px;
-        font-size: 12px;
-        color: $grayscale-medium;
-        transition: $g-transition;
-
-        &:hover {
-          box-shadow: $shadow-secondary-muted;
-        }
-
-        &.selected {
-          background-color: $bg-buttons-secondary;
-          color: $text-secondary;
-
-          &:hover {
-            box-shadow: $shadow-secondary;
-          }
-        }
+        width: 121px;
+        height: 40px;
+        font-size: 16px;
 
         &:nth-child(2) {
-          width: 86px;
+          width: 110px;
         }
 
         &:nth-child(3) {
-          width: 104px;
+          width: 147px;
         }
 
         &:nth-child(4) {
-          width: 80px;
+          width: 116px;
         }
       }
     }
 
-    .stores__map {
-      display: none;
-      flex-grow: 1;
-      margin-top: 24px;
-      height: 354px;
+    .points__item {
+      padding: 8px;
+      background-color: $bg-buttons-secondary-muted-alt;
       border-radius: 4px;
+      width: 97px;
+      height: 32px;
+      font-size: 12px;
+      color: $grayscale-medium;
+      transition: $g-transition;
+
+      &:hover {
+        box-shadow: $shadow-secondary-muted;
+      }
 
       &.selected {
-        display: flex;
+        background-color: $bg-buttons-secondary;
+        color: $text-secondary;
+
+        &:hover {
+          box-shadow: $shadow-secondary;
+        }
       }
+
+      &:nth-child(2) {
+        width: 86px;
+      }
+
+      &:nth-child(3) {
+        width: 104px;
+      }
+
+      &:nth-child(4) {
+        width: 80px;
+      }
+    }
+  }
+
+  .stores__map {
+    display: none;
+    flex-grow: 1;
+    margin-top: 24px;
+    height: 354px;
+    border-radius: 4px;
+
+    &.selected {
+      display: flex;
     }
   }
 

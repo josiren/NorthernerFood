@@ -1,34 +1,32 @@
-$b: '.l-main';
+$b: '.l-main__contacts';
 
 #{$b} {
-  &__contacts {
-    margin-top: 33px;
+  margin-top: 33px;
 
-    .contacts__container {
+  .contacts__container {
+    display: flex;
+    gap: 90px;
+    margin-top: 48px;
+    align-items: center;
+
+    .container__item {
       display: flex;
-      gap: 90px;
-      margin-top: 48px;
-      align-items: center;
+      gap: 8px;
+      font-size: 24px;
+      color: $text-base;
 
-      .container__item {
+      .item__img {
+        height: 30px;
+      }
+
+      .item__description {
         display: flex;
-        gap: 8px;
-        font-size: 24px;
-        color: $text-base;
+        flex-direction: column;
+        gap: 16px;
 
-        .item__img {
-          height: 30px;
-        }
-
-        .item__description {
-          display: flex;
-          flex-direction: column;
-          gap: 16px;
-
-          .description__phone {
-            font-weight: bold;
-            text-decoration: underline;
-          }
+        .description__phone {
+          font-weight: bold;
+          text-decoration: underline;
         }
       }
     }

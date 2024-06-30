@@ -1,4 +1,6 @@
-.l-main__sliders {
+$b: ".l-main__sliders";
+
+#{$b} {
   display: flex;
   align-items: center;
   margin-top: 4px;

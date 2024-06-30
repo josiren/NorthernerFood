@@ -1,114 +1,112 @@
-$b: '.l-main';
+$b: '.l-main__catalog-select';
 
 #{$b} {
-  &__catalog-select {
-    margin-top: 33px;
+  margin-top: 33px;
 
-    .catalog-select__container {
-      display: grid;
-      grid-template-rows: repeat(4, auto);
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      gap: 40px;
-      margin-top: 65px;
+  .catalog-select__container {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-top: 65px;
 
-      .container__select-item {
-        height: 200px;
-        padding: 10px;
-        display: flex;
-        align-items: flex-end;
-        border-radius: 4px;
-        transition: $g-transition;
+    .container__select-item {
+      height: 200px;
+      padding: 10px;
+      display: flex;
+      align-items: flex-end;
+      border-radius: 4px;
+      transition: $g-transition;
 
-        .select__item__text {
-          font-size: 18px;
-          font-weight: bold;
-          color: $text-secondary;
+      .select__item__text {
+        font-size: 18px;
+        font-weight: bold;
+        color: $text-secondary;
+      }
+
+      &:nth-child(1) {
+        grid-column: span 2;
+        background: linear-gradient(180deg, transparent 35%, #70c05b 90%), url("../img/pages/catalogpage/1.jpg");
+      }
+
+      &:nth-child(2) {
+        background: linear-gradient(180deg, rgba(255, 102, 51, 0) 0%, #f63 100%), url("../img/pages/catalogpage/2.jpg");
+
+        &:hover {
+          box-shadow: $shadow-base;
         }
+      }
 
-        &:nth-child(1) {
-          grid-column: span 2;
-          background: linear-gradient(180deg, transparent 35%, #70c05b 90%), url("../img/pages/catalogpage/1.jpg");
-        }
+      &:nth-child(3) {
+        background: linear-gradient(180deg, transparent 35%, #70c05b 90%), url("../img/pages/catalogpage/3.jpg");
+      }
 
-        &:nth-child(2) {
-          background: linear-gradient(180deg, rgba(255, 102, 51, 0) 0%, #f63 100%), url("../img/pages/catalogpage/2.jpg");
+      &:nth-child(4) {
+        background: linear-gradient(180deg, transparent 35%, #70c05b 90%), url("../img/pages/catalogpage/4.jpg");
+      }
 
-          &:hover {
-            box-shadow: $shadow-base;
-          }
-        }
+      &:nth-child(5) {
+        background: linear-gradient(180deg, transparent 35%, #70c05b 90%), url("../img/pages/catalogpage/5.jpg");
+      }
 
-        &:nth-child(3) {
-          background: linear-gradient(180deg, transparent 35%, #70c05b 90%), url("../img/pages/catalogpage/3.jpg");
-        }
+      &:nth-child(6) {
+        background: linear-gradient(180deg, transparent 35%, #70c05b 90%), url("../img/pages/catalogpage/6.jpg");
+      }
 
-        &:nth-child(4) {
-          background: linear-gradient(180deg, transparent 35%, #70c05b 90%), url("../img/pages/catalogpage/4.jpg");
-        }
+      &:nth-child(7) {
+        background: linear-gradient(180deg, transparent 35%, #70c05b 90%), url("../img/pages/catalogpage/7.jpg");
+      }
 
-        &:nth-child(5) {
-          background: linear-gradient(180deg, transparent 35%, #70c05b 90%), url("../img/pages/catalogpage/5.jpg");
-        }
+      &:nth-child(8) {
+        background: linear-gradient(180deg, transparent 35%, #70c05b 90%), url("../img/pages/catalogpage/8.jpg");
+      }
 
-        &:nth-child(6) {
-          background: linear-gradient(180deg, transparent 35%, #70c05b 90%), url("../img/pages/catalogpage/6.jpg");
-        }
+      &:nth-child(9) {
+        background: linear-gradient(180deg, transparent 35%, #70c05b 90%), url("../img/pages/catalogpage/9.jpg");
+      }
 
-        &:nth-child(7) {
-          background: linear-gradient(180deg, transparent 35%, #70c05b 90%), url("../img/pages/catalogpage/7.jpg");
-        }
+      &:nth-child(10) {
+        grid-column: span 2;
+        background: linear-gradient(180deg, transparent 35%, #70c05b 90%), url("../img/pages/catalogpage/10.jpg");
+      }
 
-        &:nth-child(8) {
-          background: linear-gradient(180deg, transparent 35%, #70c05b 90%), url("../img/pages/catalogpage/8.jpg");
-        }
+      &:nth-child(11) {
+        background: linear-gradient(180deg, transparent 35%, #70c05b 90%), url("../img/pages/catalogpage/11.jpg");
+      }
 
-        &:nth-child(9) {
-          background: linear-gradient(180deg, transparent 35%, #70c05b 90%), url("../img/pages/catalogpage/9.jpg");
-        }
+      &:nth-child(12) {
+        grid-column: span 2;
+        background: linear-gradient(180deg, transparent 35%, #70c05b 90%), url("../img/pages/catalogpage/12.jpg");
+      }
 
-        &:nth-child(10) {
-          grid-column: span 2;
-          background: linear-gradient(180deg, transparent 35%, #70c05b 90%), url("../img/pages/catalogpage/10.jpg");
-        }
+      &:nth-child(13) {
+        background: linear-gradient(180deg, transparent 35%, #70c05b 90%), url("../img/pages/catalogpage/13.jpg");
+      }
 
-        &:nth-child(11) {
-          background: linear-gradient(180deg, transparent 35%, #70c05b 90%), url("../img/pages/catalogpage/11.jpg");
-        }
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4),
+      &:nth-child(5) {
+        grid-column: span 1;
+      }
 
-        &:nth-child(12) {
-          grid-column: span 2;
-          background: linear-gradient(180deg, transparent 35%, #70c05b 90%), url("../img/pages/catalogpage/12.jpg");
-        }
+      &:nth-child(6),
+      &:nth-child(7) {
+        grid-column: span 1;
+      }
 
-        &:nth-child(13) {
-          background: linear-gradient(180deg, transparent 35%, #70c05b 90%), url("../img/pages/catalogpage/13.jpg");
-        }
+      &:nth-child(8),
+      &:nth-child(9) {
+        grid-column: span 1;
+      }
 
-        &:nth-child(2),
-        &:nth-child(3),
-        &:nth-child(4),
-        &:nth-child(5) {
-          grid-column: span 1;
-        }
+      &:nth-child(11),
+      &:nth-child(13) {
+        grid-column: span 1;
+      }
 
-        &:nth-child(6),
-        &:nth-child(7) {
-          grid-column: span 1;
-        }
-
-        &:nth-child(8),
-        &:nth-child(9) {
-          grid-column: span 1;
-        }
-
-        &:nth-child(11),
-        &:nth-child(13) {
-          grid-column: span 1;
-        }
-
-        &:nth-child(n + 1):nth-child(-n + 13):not(:nth-child(2)):hover {
-          box-shadow: $shadow-secondary;
-        }
+      &:nth-child(n + 1):nth-child(-n + 13):not(:nth-child(2)):hover {
+        box-shadow: $shadow-secondary;
       }
     }
   }

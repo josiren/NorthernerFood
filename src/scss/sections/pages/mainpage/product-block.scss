@@ -1,12 +1,10 @@
-$b: ".l-main";
+$b: ".l-main__products-container";
 
 #{$b} {
-  &__products-container {
-    display: flex;
-    flex-direction: column;
-    gap: 120px;
-    margin-top: 80px;
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  margin-top: 80px;
 
   .products-container__item {
     display: flex;
