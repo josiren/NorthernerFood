@@ -114,53 +114,8 @@ html .ui-button.ui-state-disabled:active {
     }
   }
 
-  &__available-switch {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  .available-switch {
     margin-top: 52px;
-
-    .available-switch__switch {
-      position: relative;
-      width: 46px;
-      height: 24px;
-
-      .switch__checkbox {
-        &:checked + .switch__slider {
-          background-color: $bg-buttons-secondary;
-        }
-
-        &:checked + .switch__slider::before {
-          transform: translateX(23px);
-        }
-      }
-
-      .switch__slider {
-        position: absolute;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: $grayscale-light;
-        transition: $g-transition;
-        border-radius: 49px;
-
-        &::before {
-          position: absolute;
-          content: "";
-          height: 20px;
-          width: 20px;
-          background-color: $bg-main;
-          transition: $g-transition;
-          border-radius: 100px;
-          margin-left: 2px;
-          box-shadow: $shadow-secondary-muted;
-        }
-      }
-    }
   }
 
   &__apply-btn {

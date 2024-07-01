@@ -1,0 +1,117 @@
+<section class="l-main__basket l-outer-width">
+	<div class="basket__title">
+		<h1 class="title__text title-page">{{ pageTitle }}</h1>
+		<p class="title__description">3</p>
+	</div>
+	<div class="basket__container">
+		<div class="container__item">
+			<div class="item__buttons">
+                <div class="buttons__select-btn">
+                    <div class="select-btn__img">{{ inc.inlineSvg('minus', '../static/img/pages/basketpage/minus.svg') }}</div>
+                    <h4 class="select-btn__text">Выделить всё</h4>
+                </div>
+                <div class="buttons__remove-btn">Удалить выбранные</div>
+            </div>
+            <div class="item__products">
+                <div class="products__item">
+                    <img src="../img/pages/basketpage/product.png" alt="product" class="item__img">
+                    <div class="item__description">
+                        <h3 class="description__title">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h3>
+                        <h3 class="description__price">
+                            44,50 ₽ <span>за шт.</span>
+                        </h3>
+                    </div>
+                    <div class="item__counting">
+                        <div class="counting__subtract">{{ inc.inlineSvg('minus', '../static/img/pages/basketpage/minus.svg') }}</div>
+                        <h3 class="counting_amount">2</h3>
+                        <div class="counting__add">{{ inc.inlineSvg('plus', '../static/img/pages/basketpage/plus.svg') }}</div>
+                    </div>
+                    <div class="item__price">89,00 ₽</div>
+                </div>
+                <div class="products__item">
+                    <img src="../img/pages/basketpage/product.png" alt="product" class="item__img">
+                    <div class="item__description">
+                        <h3 class="description__title">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h3>
+                        <h3 class="description__price">
+                            44,50 ₽ <span>за шт.</span>
+                        </h3>
+                    </div>
+                    <div class="item__counting">
+                        <div class="counting__subtract">{{ inc.inlineSvg('minus', '../static/img/pages/basketpage/minus.svg') }}</div>
+                        <h3 class="counting_amount">2</h3>
+                        <div class="counting__add">{{ inc.inlineSvg('plus', '../static/img/pages/basketpage/plus.svg') }}</div>
+                    </div>
+                    <div class="item__price">89,00 ₽</div>
+                </div>
+                <div class="products__item">
+                    <img src="../img/pages/basketpage/product.png" alt="product" class="item__img">
+                    <div class="item__description">
+                        <h3 class="description__title">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h3>
+                        <h3 class="description__price">
+                            44,50 ₽ <span>за шт.</span>
+                        </h3>
+                    </div>
+                    <div class="item__counting">
+                        <div class="counting__subtract">{{ inc.inlineSvg('minus', '../static/img/pages/basketpage/minus.svg') }}</div>
+                        <h3 class="counting_amount">2</h3>
+                        <div class="counting__add">{{ inc.inlineSvg('plus', '../static/img/pages/basketpage/plus.svg') }}</div>
+                    </div>
+                    <div class="item__price">89,00 ₽</div>
+                </div>
+                <div class="products__item">
+                    <img src="../img/pages/basketpage/product.png" alt="product" class="item__img">
+                    <div class="item__description">
+                        <h3 class="description__title">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h3>
+                        <h3 class="description__price">
+                            44,50 ₽ <span>за шт.</span>
+                        </h3>
+                    </div>
+                    <div class="item__counting">
+                        <div class="counting__subtract">{{ inc.inlineSvg('minus', '../static/img/pages/basketpage/minus.svg') }}</div>
+                        <h3 class="counting_amount">2</h3>
+                        <div class="counting__add">{{ inc.inlineSvg('plus', '../static/img/pages/basketpage/plus.svg') }}</div>
+                    </div>
+                    <div class="item__price">Нет в наличии</div>
+                </div>
+            </div>
+		</div>
+        <div class="container__item">
+            <div class="item__bonus">
+                <div class="bonus__switch available-switch">
+                    <label class="available-switch__switch">
+                        <input type="checkbox" class="switch__checkbox">
+                        <span class="switch__slider"></span>
+                    </label>
+                    <h3 class="available-switch__title">Списать 200 ₽</h3>
+                </div>
+                <h3 class="bonus__description">На карте накоплено 200 ₽</h3>
+            </div>
+            <div class="item__rectangle"></div>
+            <div class="item__info-product">
+                <div class="info-product__item">
+                    <h3 class="product__item__title">3 товара</h3>
+                    <h3 class="product__item__price">258,10  ₽</h3>
+                </div>
+                <div class="info-product__item">
+                    <h3 class="product__item__title">Скидка</h3>
+                    <h3 class="product__item__subtract">-8,01 ₽</h3>
+                </div>
+            </div>
+            <div class="item__rectangle"></div>
+            <div class="item__conclusion">
+                <div class="conclusion__price">
+                    <h3 class="price__title">Итог</h3>
+                    <h2 class="price__value">250,09 ₽</h2>
+                </div>
+                <div class="conclusion__bonus">
+                    <div class="bonus__img">{{ inc.inlineSvg('semi-circle', '../static/img/pages/basketpage/semi-circle.svg') }}</div>
+                    <h4 class="bonus__title">Вы получаете <span>100 бонусов</span></h4>
+                </div>
+            </div>
+            <div class="item__submit">
+                <p class="submit__min-price">Минимальная сумма заказа 1000р</p>
+                <button class="submit__button" type="button">Оформить заказ</button>
+            </div>
+        </div>
+	</div>
+</section>

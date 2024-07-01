@@ -16,6 +16,9 @@ $grayscale-medium: #606060;
 $grayscale-medium-alt: #8f8f8f;
 $grayscale-lightest: #f3f2f1;
 $orange-true: #f63f;
+$orange-muted: #fcd5ba;
+$green-true: #70c05b;
+$red-error: #d80000;
 
 // UI Colors
 $color-base: $white-true;
@@ -38,11 +41,11 @@ $bg-alt: #fbf8ec;
 $bg-footer: #ccc;
 $bg-primary: $orange-true;
 $bg-primary-muted: #fcd5ba;
-$bg-buttons-secondary: #70c05b;
+$bg-buttons-secondary: $green-true;
 $bg-buttons-secondary-muted-alt: $grayscale-lightest;
 $bg-buttons-secondary-muted: #e5ffde;
 $bg-secondary-muted: #e5ffde;
-$bg-liked: #fcd5ba;
+$bg-liked: $orange-muted;
 
 // Fonts
 $font-base: 'Rubik';
